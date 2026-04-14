@@ -42,10 +42,7 @@
     <noscript>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     </noscript>
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!--anchor link -->
-    <a href="about.html#">about us</a>
  
     <script type="application/ld+json">
         </script>
@@ -61,30 +58,30 @@
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container">
-            <a class='logo' href='/'>
+            <a class='logo' href='index.html'>
                 <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
                     fetchpriority="high">
             </a>
 
             <ul class="nav-menu" id="navMenu">
-                <li><a class='nav-link active' href='/'>Home</a></li>
-                <li><a class='nav-link' href='/about'>About</a></li>
-                <li><a class='nav-link' href='/products'>Products</a></li>
-                <li><a class='nav-link' href='/infrastructure'>Infrastructure</a></li>
-                <li><a class='nav-link' href='/applications'>Applications</a></li>
+                <li><a class='nav-link active' href='index.html'>Home</a></li>
+                <li><a class='nav-link' href='about.html'>About</a></li>
+                <li><a class='nav-link' href='products.html'>Products</a></li>
+                <li><a class='nav-link' href='infrastructure.html'>Infrastructure</a></li>
+                <li><a class='nav-link' href='applications.html'>Applications</a></li>
                 <li class="dropdown" id="moreDropdown">
                     <a href="#" class="nav-link">More <i class="fa-solid fa-chevron-down"
                             style="font-size:0.7em; margin-left:4px;"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href='/gallery'><i class="fa-solid fa-images"
+                        <li><a href='gallery.html'><i class="fa-solid fa-images"
                                     style="margin-right:8px; color:var(--primary);"></i>Gallery</a></li>
-                        <li><a href='/certificates'><i class="fa-solid fa-certificate"
+                        <li><a href='certificates.html'><i class="fa-solid fa-certificate"
                                     style="margin-right:8px; color:var(--primary);"></i>Certificates</a></li>
-                        <li><a href='/contact'><i class="fa-solid fa-envelope"
+                        <li><a href='contact.html'><i class="fa-solid fa-envelope"
                                     style="margin-right:8px; color:var(--primary);"></i>Contact Us</a></li>
                     </ul>
                 </li>
-                <li><a class='nav-link nav-cta' href='/contact'>Get a Quote</a></li>
+                <li><a class='nav-link nav-cta' href='contact.html'>Get a Quote</a></li>
             </ul>
 
             <div class="hamburger" id="hamburger">
@@ -97,11 +94,22 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
-        <video autoplay muted loop playsinline class="hero-video" preload="metadata">
-            <source src="sa.mp4" type="video/mp4">
-            <source src="https://videos.pexels.com/video-files/5824586/5824586-hd_1920_1080_25fps.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline class="hero-video" preload="auto">
+            <source src="assets/videos/sa.mp4" type="video/mp4" onerror="this.parentElement.style.display='none'">
+            <source src="https://videos.pexels.com/video-files/3848123/3848123-uhd_2560_1440_25fps.mp4" type="video/mp4">
         </video>
         <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tagline">JPS Engineering Material Pvt Ltd</div>
+                <h1 class="hero-title">Shaping the <span class="highlight">Future</span> of <span class="outline-text">Engineering</span></h1>
+                <p class="hero-desc">Leading manufacturer of high-performance engineering plastics and precision metal components. Trusted by global industry leaders.</p>
+                <div class="hero-btns">
+                    <a href="products.html" class="btn btn-primary">Our Products</a>
+                    <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Snippet -->
@@ -122,7 +130,7 @@
                         <li style="margin-bottom: 10px;"><i class="fa-solid fa-check" style="color: var(--accent); margin-right: 10px;"></i> Custom Solutions for Diverse Industries
                         </li>
                     </ul>
-                    <a class='btn btn-primary' href='/about' style='padding: 10px 25px; font-size: 0.9em;'>Read
+                    <a class='btn btn-primary' href='about.html' style='padding: 10px 25px; font-size: 0.9em;'>Read
                         More</a>
                 </div>
                 <!-- Product Image Grid -->
@@ -153,12 +161,12 @@
                 <div class="infra-stat-card">
                     <i class="fa-solid fa-chart-line"></i>
                     <h3>50% Utilized</h3>
-                    <p>Current production load â€” 1000 parts per shift</p>
+                    <p>Current production load — 1000 parts per shift</p>
                 </div>
                 <div class="infra-stat-card" style="border-color:rgba(255,183,3,0.35); box-shadow:0 0 20px rgba(255,183,3,0.08);">
                     <i class="fa-solid fa-bolt"></i>
                     <h3>50% Spare</h3>
-                    <p>Available capacity for new projects â€” 2000 parts/day</p>
+                    <p>Available capacity for new projects — 2000 parts/day</p>
                 </div>
             </div>
 
@@ -266,7 +274,7 @@
                         <tr>
                             <td>Laser Marking Machine</td>
                             <td>Imported</td>
-                            <td>â€”</td>
+                            <td>—</td>
                             <td>1</td>
                         </tr>
                         <tr>
@@ -286,7 +294,7 @@
             </div>
 
             <div style="text-align:center; margin-top:40px;" data-aos="fade-up">
-                <a class='btn btn-primary' href='/infrastructure'>View Full Infrastructure &nbsp;<i
+                <a class='btn btn-primary' href='infrastructure.html'>View Full Infrastructure &nbsp;<i
                         class="fa-solid fa-arrow-right"></i></a>
             </div>
         </div>
@@ -303,23 +311,23 @@
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <!-- Set 1 -->
-                <div class="client-logo-box"><img src="assets/images/clients/motherson1.svg" alt="Motherson" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/jamna.svg" alt="Jamna Auto Industries" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/cnh.svg" alt="CNH Industrial" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt" width="120" height="60" loading="lazy"></div>
                 <!-- Duplicate for seamless loop -->
                 <div class="client-logo-box"><img src="assets/images/clients/motherson.svg" alt="Motherson" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/terex.svg" alt="Terex" width="120" height="60" loading="lazy"></div>
@@ -328,16 +336,16 @@
                 <div class="client-logo-box"><img src="assets/images/clients/unilever.svg" alt="Unilever" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/patanjali.svg" alt="Patanjali" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/ace.svg" alt="ACE Cranes" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="\" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="Siemens" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/abb.svg" alt="ABB" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/bosch.svg" alt="Bosch" width="120" height="60" loading="lazy"></div>
                 <div class="client-logo-box"><img src="assets/images/clients/tata.svg" alt="Tata" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt=" " width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt="" width="120" height="60" loading="lazy"></div>
-                <div class="client-logo-box"><img src="" alt=" " width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/siemens.svg" alt="Siemens" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/honeywell.svg" alt="Honeywell" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/schneider.svg" alt="Schneider Electric" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/skf.svg" alt="SKF" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/sandvik.svg" alt="Sandvik" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/atlas.svg" alt="Atlas Copco" width="120" height="60" loading="lazy"></div>
+                <div class="client-logo-box"><img src="assets/images/clients/dewalt.svg" alt="DeWalt" width="120" height="60" loading="lazy"></div>
             </div>
         </div>
     </section>
@@ -358,7 +366,7 @@
                     <h3>Cast Nylon</h3>
                     <p>High-performance Nylon 6G components with excellent wear resistance and mechanical properties.
                     </p>
-                    <a class='product-link-home' href='/products'>Learn More <i
+                    <a class='product-link-home' href='products.html'>Learn More <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <!-- Product 2 -->
@@ -368,7 +376,7 @@
                     </div>
                     <h3>POM (Delrin)</h3>
                     <p>Precision engineered Polyacetal parts for demanding industrial applications.</p>
-                    <a class='product-link-home' href='/products'>Learn More <i
+                    <a class='product-link-home' href='products.html'>Learn More <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <!-- Product 3 -->
@@ -378,7 +386,7 @@
                     </div>
                     <h3>PEEK Components</h3>
                     <p>Ultra high-performance polymer parts for extreme temperature and chemical environments.</p>
-                    <a class='product-link-home' href='/products'>Learn More <i
+                    <a class='product-link-home' href='products.html'>Learn More <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <!-- Product 4 -->
@@ -388,12 +396,12 @@
                     </div>
                     <h3>Custom Machining</h3>
                     <p>Precision CNC machining services for custom engineering plastic and metal components.</p>
-                    <a class='product-link-home' href='/products'>Learn More <i
+                    <a class='product-link-home' href='products.html'>Learn More <i
                             class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div style="text-align: center; margin-top: 50px;" data-aos="fade-up">
-                <a class='btn btn-primary' href='/products'>View All Products</a>
+                <a class='btn btn-primary' href='products.html'>View All Products</a>
             </div>
         </div>
     </section>
@@ -539,7 +547,7 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <a class='logo footer-logo' href='/'>
+                    <a class='logo footer-logo' href='index.html'>
                         <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" style="height: 50px;"
                             width="207" height="50" loading="lazy">
                     </a>
@@ -550,10 +558,10 @@
                 <div>
                     <h4 class="footer-heading">Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href='/about'>About Us</a></li>
-                        <li><a href='/products'>Products</a></li>
-                        <li><a href='/applications'>Applications</a></li>
-                        <li><a href='/contact'>Contact</a></li>
+                        <li><a href='about.html'>About Us</a></li>
+                        <li><a href='products.html'>Products</a></li>
+                        <li><a href='applications.html'>Applications</a></li>
+                        <li><a href='contact.html'>Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -619,7 +627,10 @@
                     class="fa-solid fa-times"></i></button>
             <h3 style="color: white; margin-bottom: 10px; text-align: center;">Request a Callback</h3>
             <p style="color: var(--text-muted); text-align: center; margin-bottom: 25px; font-size: 0.9rem;">We'll call you back within 30 minutes</p>
-            <form action="#" method="POST">
+            <form action="https://formsubmit.co/contact@jpsenggmaterials.com" method="POST">
+                <input type="hidden" name="_subject" value="New Callback Request">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="thanks.html">
                 <input type="text" placeholder="Your Name *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
                 <input type="tel" placeholder="Phone Number *" required style="width: 100%; padding: 12px; margin-bottom: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit;">
                 <select required style="width: 100%; padding: 12px; margin-bottom: 20px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; color: white; font-family: inherit; cursor: pointer;">
