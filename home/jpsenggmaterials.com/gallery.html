@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JPS Engineering Material Pvt Ltd - Leading manufacturer of Cast Nylon, POM, PEEK, and Engineering Plastics/Metals in Greater Noida. Precision machining and custom solutions.">
+    <meta name="keywords" content="Cast Nylon, POM, PEEK, Engineering Plastics, Machining, Greater Noida, Nylon 6G, Polyacetal, Teflon, PTFE, Polyurethane, JPS Engineering">
+    <meta name="author" content="JPS Engineering Material Pvt Ltd">
+    <title>Gallery | JPS Engineering Material Pvt Ltd</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" media="print" onload="this.media='all'" />
+    <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    </noscript>
+    <!-- GLightbox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="index.html">
+    <style>
+        .page-header {
+            padding: 150px 0 80px;
+            background: linear-gradient(135deg, rgba(11, 17, 32, 0.95) 0%, rgba(41, 98, 255, 0.1) 100%), url('assets/images/gallery-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            margin-top: -80px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 250px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: var(--glass-border);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(11, 17, 32, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .zoom-icon {
+            color: white;
+            font-size: 2rem;
+            transform: scale(0);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover .zoom-icon {
+            transform: scale(1);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            border-radius: 16px;
+            border: var(--glass-border);
+            background: #000;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a class='logo' href='/'>
+                <img src="assets/images/jps-logo.webp" alt="JPS Engineering Logo" width="289" height="70"
+                    fetchpriority="high">
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a class='nav-link' href='/'>Home</a></li>
+                <li><a class='nav-link' href='/about'>About</a></li>
+                <li><a class='nav-link' href='/products'>Products</a></li>
+                <li><a class='nav-link' href='/infrastructure'>Infrastructure</a></li>
+                <li><a class='nav-link' href='/applications'>Applications</a></li>
+                <li class="dropdown" id="moreDropdown">
+                    <a href="#" class="nav-link">More <i class="fa-solid fa-chevron-down"
+                            style="font-size:0.7em; margin-left:4px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href='/gallery'><i class="fa-solid fa-images"
+                                    style="margin-right:8px; color:var(--primary);"></i>Gallery</a></li>
+                        <li><a href='/certificates'><i class="fa-solid fa-certificate"
+                                    style="margin-right:8px; color:var(--primary);"></i>Certificates</a></li>
+                        <li><a href='/contact'><i class="fa-solid fa-envelope"
+                                    style="margin-right:8px; color:var(--primary);"></i>Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a class='nav-link nav-cta' href='/contact'>Get a Quote</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-down">Media Gallery</h1>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 20px auto;" data-aos="fade-up">A visual tour of our innovative manufacturing facility and products.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section>
+        <div class="container">
+
+            <!-- Video Section -->
+            <div style="margin-bottom: 80px;" data-aos="fade-up">
+                <div class="section-header" style="text-align: left;">
+                    <p>Featured Video</p>
+                    <h2>Inside Our Facility</h2>
+                </div>
+                <div class="video-wrapper">
+                    <video controls poster="sa.mp4">
+                        <source src="home/jpsenggmaterials.com/assets/videos/JPS-engineering-vieo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="section-header">
+                <p>Portfolio</p>
+                <h2>Product Showcase</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 - Nylon Gears -->
+                <a href="assets/images/products/nylon-gears.webp" class="gallery-item glightbox" data-glightbox="title: Nylon Gears Machine; description: High-quality nylon gears for printing applications">
+                    <img src="assets/images/products/nylon-gears.webp" alt="Nylon Gears Machine" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 2 - Jig Fixtures -->
+                <a href="assets/images/products/jig-fixtures.webp" class="gallery-item glightbox" data-glightbox="title: Jigs & Fixtures; description: Precision engineered jigs for industrial applications">
+                    <img src="assets/images/products/jig-fixtures.webp" alt="Jigs And Fixtures" width="400" height="250"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 3 - Plastic Machine Parts -->
+                <a href="assets/images/products/plastic-machine-parts.webp" class="gallery-item glightbox" data-glightbox="title: Plastic Machine Parts; description: Custom plastic components for industrial use">
+                    <img src="assets/images/products/plastic-machine-parts.webp" alt="Plastic Machine Parts" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 4 - Painting Jig Fixtures -->
+                <a href="assets/images/products/painting-jig-fixtures.webp" class="gallery-item glightbox" data-glightbox="title: Robotics Painting Jig; description: Aluminium painting jig fixtures for automated assembly">
+                    <img src="assets/images/products/painting-jig-fixtures.webp" alt="Robotics Painting Jig Fixtures"
+                        width="400" height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 5 - Ropeway Trolley -->
+                <a href="assets/images/products/ropeway-trolley.webp" class="gallery-item glightbox" data-glightbox="title: Ropeway Udan Khatola; description: Complete Udan Khatola trolley systems">
+                    <img src="assets/images/products/ropeway-trolley.webp" alt="Ropeway Udan Khatola Trolley"
+                        width="400" height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 6 - PEEK Sheet -->
+                <a href="assets/images/products/peek-sheet.webp" class="gallery-item glightbox" data-glightbox="title: PEEK Sheet & Rod; description: High-performance PEEK material sheets">
+                    <img src="assets/images/products/peek-sheet.webp" alt="PEEK Sheet And Rod" width="400" height="250"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 7 - Plastic Bushes -->
+                <a href="assets/images/products/plastic-bushes.webp" class="gallery-item glightbox" data-glightbox="title: Industrial Plastic Bushes; description: Self-lubricating plastic bushes for machinery">
+                    <img src="assets/images/products/plastic-bushes.webp" alt="Industrial Plastic Bushes" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 8 - Plastic Sprocket -->
+                <a href="assets/images/products/plastic-sprocket.webp" class="gallery-item glightbox" data-glightbox="title: Plastic Machine Sprocket; description: Industrial plastic sprockets with 19 teeth">
+                    <img src="assets/images/products/plastic-sprocket.webp" alt="Plastic Machine Sprocket" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 9 - Nylon Base Plate -->
+                <a href="assets/images/products/nylon-base-plate.webp" class="gallery-item glightbox" data-glightbox="title: Nylon Machine Base Plate; description: Precision base plates for industrial machines">
+                    <img src="assets/images/products/nylon-base-plate.webp" alt="Nylon Machine Base Plate" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 10 - UHMW PE Seal -->
+                <a href="assets/images/products/uhmw-pe-seal.webp" class="gallery-item glightbox" data-glightbox="title: UHMW PE Pistol Seal; description: High-grade seals for industrial applications">
+                    <img src="assets/images/products/uhmw-pe-seal.webp" alt="UHMW PE Pistol Seal" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 11 - Nylon Machine Gear -->
+                <a href="assets/images/products/nylon-machine-gear.webp" class="gallery-item glightbox" data-glightbox="title: Nylon Machine Gear; description: High-strength nylon gears for printing machines">
+                    <img src="assets/images/products/nylon-machine-gear.webp" alt="Nylon Machine Gear" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+                <!-- Gallery Item 12 - Ropeway Cabin -->
+                <a href="assets/images/products/ropeway-cabin.webp" class="gallery-item glightbox" data-glightbox="title: Indian Cabin Ropeway; description: Complete cabin ropeway systems">
+                    <img src="assets/images/products/ropeway-cabin.webp" alt="Indian Cabin Ropeway" width="400"
+                        height="250" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fa-solid fa-magnifying-glass-plus zoom-icon"></i>
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a class='logo footer-logo' href='/'>
+                        <img src="assets/images/jps logo.png" alt="JPS Engineering Logo" style="height: 50px;">
+                    </a>
+                    <p class="footer-desc">
+                        Your trusted partner for high-quality engineering materials and components.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href='/about'>About Us</a></li>
+                        <li><a href='/products'>Products</a></li>
+                        <li><a href='/applications'>Applications</a></li>
+                        <li><a href='/contact'>Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Contact</h4>
+                    <p class="footer-contact"><i class="fa-solid fa-location-dot"></i> 4/47, Ajanta Textile Compound Site -2, Industrial Area, Mohan Nagar Ghaziabad, UP-201007</p>
+                    <p class="footer-contact"><i class="fa-solid fa-phone"></i> 0120-4818775, +91-9811131910 (Sales)</p>
+                    <p class="footer-contact"><i class="fa-solid fa-envelope"></i> contact@jpsenggmaterials.com</p>
+                    <h4 class="footer-heading" style="margin-top: 25px;">Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><i class="fa-solid fa-file-invoice"></i> GST No: <strong>09AAGC1799L1ZU</strong></p>
+                <p>&copy; 2025 JPS Engineering Material Pvt Ltd. All Rights Reserved.</p>
+                <p>Designed and Developed by <a href="https://garvikadvertising.com" target="_blank">Garvik India</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 100,
+            once: true
+        });
+
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            autoplayVideos: true
+        });
+
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+        }
+        const moreDropdown = document.getElementById('moreDropdown');
+        if (moreDropdown) {
+            moreDropdown.querySelector('.nav-link').addEventListener('click', (e) => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    moreDropdown.classList.toggle('open');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+
+</html>
